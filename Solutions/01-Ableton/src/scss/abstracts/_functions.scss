@@ -1,0 +1,11 @@
+@use "sass:map";
+@use "./fonts" as *;
+@use "./colors" as *;
+
+@function font($font-name) {
+	@return map-get($fonts, $font-name);
+}
+
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}

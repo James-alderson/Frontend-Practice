@@ -1,0 +1,16 @@
+@font-face {
+	font-family: "Futura";
+	font-weight: 700;
+	font-display: swap;
+	src: url(../../fonts/Futura/FuturaPTBold.otf);
+}
+@font-face {
+	font-family: "Futura";
+	font-weight: 400;
+	font-display: swap;
+	src: url(../../fonts/Futura/FuturaPTBook.otf);
+}
+
+$fonts: (
+	"Futura": ("Futura", sans-serif)
+)

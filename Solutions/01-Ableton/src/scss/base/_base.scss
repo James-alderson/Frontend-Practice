@@ -1,0 +1,12 @@
+@use "../abstracts/functions" as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+  color: color(Black-clr);
+	background-color: color(Main);
+}
