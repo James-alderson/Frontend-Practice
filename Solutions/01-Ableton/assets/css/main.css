@@ -777,7 +777,7 @@ header.active .nav {
 }
 @media screen and (min-width: 80rem) {
   .nav-scroll {
-    padding: 1.65rem 2.5rem 1.3rem;
+    padding: 1.65rem 2.5rem 1.5rem;
     column-gap: 1.85rem;
   }
 }
@@ -788,6 +788,28 @@ header.active .nav {
   .nav-scroll a {
     font-size: 1rem;
     font-weight: 500;
+  }
+}
+
+.hero {
+  display: grid;
+  height: calc(100vh - 129.767px);
+  margin: 0 min(135px, 8vw);
+  place-items: center;
+  background: #eee url(../images/main/hero.avif) no-repeat center/cover;
+}
+@media screen and (min-width: 80rem) {
+  .hero {
+    height: calc(100vh - 138.8px);
+  }
+}
+
+.hero-logo {
+  width: 215px;
+}
+@media screen and (min-width: 48rem) {
+  .hero-logo {
+    width: 430px;
   }
 }
 

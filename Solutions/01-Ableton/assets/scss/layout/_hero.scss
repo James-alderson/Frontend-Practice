@@ -1,0 +1,22 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/breakpoints" as *;
+
+.hero {
+	display: grid;
+	height: calc(100vh - 129.767px);
+	margin: 0 min(135px, 8vw);
+	place-items: center;
+	background: #eee url(../images/main/hero.avif) no-repeat center/cover;
+
+	@include respond(xl-b) {
+		height: calc(100vh - 138.8px);
+	}
+}
+
+.hero-logo {
+	width: 215px;
+
+	@include respond(md) {
+		width: 430px;
+	}
+}
