@@ -10,6 +10,20 @@
   font-display: swap;
   src: url(../fonts/Futura/FuturaPTBook.otf);
 }
+.container {
+  margin: 0 auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+@media screen and (min-width: 100rem) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+.link--active {
+  color: hsl(14deg, 100%, 65%) !important;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -327,7 +341,7 @@ template {
 
 ::selection {
   color: hsl(0deg, 0%, 100%);
-  background-color: rgba(0, 0, 255, 0.9);
+  background-color: hsl(240deg, 100%, 50%);
 }
 
 body {
@@ -340,20 +354,6 @@ img,
 svg {
   display: block;
   height: auto;
-}
-
-.container {
-  margin: 0 auto;
-  background-color: hsl(0deg, 0%, 100%);
-}
-@media screen and (min-width: 100rem) {
-  .container {
-    max-width: 1600px;
-  }
-}
-
-.link--active {
-  color: hsl(14deg, 100%, 65%) !important;
 }
 
 a {
@@ -753,6 +753,42 @@ header.active #navMenuBtn::after {
 }
 header.active .nav {
   top: 0;
+}
+
+.nav-scroll {
+  display: flex;
+  padding: 1.4rem 1.25rem 1.3rem;
+  column-gap: 1.28rem;
+  align-items: center;
+  transition: top 0.3s ease-out;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.nav-scroll.active {
+  top: 0;
+}
+@media screen and (min-width: 64rem) {
+  .nav-scroll {
+    position: sticky;
+    top: -66px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .nav-scroll {
+    padding: 1.65rem 2.5rem 1.3rem;
+    column-gap: 1.85rem;
+  }
+}
+.nav-scroll a {
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 80rem) {
+  .nav-scroll a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
