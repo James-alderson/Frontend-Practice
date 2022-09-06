@@ -5,14 +5,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="James Alderson">
-  <meta name="description" content="Ableton is a Berlin-based company that makes Live and Push - software and hardware for creating, producing and performing music. Learn more about Ableton.">
+  <meta name="description"
+    content="Ableton is a Berlin-based company that makes Live and Push - software and hardware for creating, producing and performing music. Learn more about Ableton.">
 
   <title>Learn more about Ableton - maker of Live and Push | Ableton</title>
   <link rel="stylesheet" href="dist/css/main.css">
+  <script src="src/js/navigation.js" defer></script>
   <link rel="apple-touch-icon-precomposed" type="image/png" sizes="300x300" href="src/images/favicon/favicon.png">
   <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="src/images/favicon/favicon.ico">
 </head>
 <body>
-  
+
+  <div class="container">
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <svg width="45" height="21" viewBox="0 0 45 21">
+            <title>Ableton Homepage</title>
+            <path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path>
+          </svg>
+        </a>
+        <button id="navMenuBtn" class="btn btn--nav btn--nav-menu">Menu</button>
+      </div>
+      <nav class="nav">
+        <div class="nav-container">
+          <div>
+            <a href="#" class="nav-link">Live</a>
+            <a href="#" class="nav-link">Push</a>
+            <a href="#" class="nav-link">Link</a>
+            <a href="#" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">Packs</a>
+            <a href="#" class="nav-link">Help</a>
+            <button id="navMoreBtn" class="btn btn--nav btn--nav-more link--active">More</button>
+          </div>
+          <div>
+            <a href="#" class="nav-link nav-link--try-live">Try Live for free</a>
+            <a href="#" class="nav-link nav-link--login-register">Log in or register</a>
+          </div>
+        </div>
+        <div id="navMore" class="nav--more">
+          <div class="nav--links">
+            <h2>More on Ableton.com:</h2>
+            <div>
+              <a href="#">Blog</a>
+              <a href="#">Ableton for the Classroom</a>
+              <a href="#">Ableton for Colleges and Universities</a>
+              <a href="#">Certified Training</a>
+              <a href="#" class="link--active">About Ableton</a>
+              <a href="#">Jobs</a>
+              <a href="#">Apprenticeships</a>
+            </div>
+          </div>
+          <div class="nav--content">
+            <h2>More from Ableton:</h2>
+            <div>
+              <div class="content-container">
+                <div class="content">
+                  <a href="#">
+                    <h4 class="title">Loop</h4>
+                    <p class="description">Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
+                  </a>
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <h4 class="title">Learning Music</h4>
+                    <p class="description">Learn the fundamentals of music making right in your browser.</p>
+                  </a>
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <h4 class="title">Learning Synths</h4>
+                    <p class="description">Get started with synthesis using a web-based synth and accompanying lessons.</p>
+                  </a>
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <h4 class="title">Making Music</h4>
+                    <p class="description">Some tips from 74 Creative Strategies for Electronic Producers.</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
 </body>
 </html>

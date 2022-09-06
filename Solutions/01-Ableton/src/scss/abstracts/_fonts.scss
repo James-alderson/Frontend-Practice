@@ -1,14 +1,14 @@
 @font-face {
 	font-family: "Futura";
-	font-weight: 700;
+	font-weight: 500;
 	font-display: swap;
-	src: url(../../fonts/Futura/FuturaPTBold.otf);
+	src: url(../fonts/Futura/FuturaPTMedium.otf);
 }
 @font-face {
 	font-family: "Futura";
 	font-weight: 400;
 	font-display: swap;
-	src: url(../../fonts/Futura/FuturaPTBook.otf);
+	src: url(../fonts/Futura/FuturaPTBook.otf);
 }
 
 $fonts: (

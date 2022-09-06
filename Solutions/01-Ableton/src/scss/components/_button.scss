@@ -1,0 +1,85 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/breakpoints" as *;
+
+.btn {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+
+	&--nav {
+		display: inline-block;
+		font-size: 1rem;
+		font-weight: 500;
+		padding: 0;
+
+		&-menu {
+			font-size: 1.25rem;
+			z-index: 9;
+			transition: color 0.3s ease-out;
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 0;
+				height: 0;
+				margin: 0 0 3px 5px;
+				border-top: 5px solid color(Black-clr);
+				border-right: 4px solid transparent;
+				border-left: 4px solid transparent;
+				transition: border-color 0.3s ease-out;
+			}
+
+			@include respond(lg) {
+				display: none;
+			}
+		}
+
+		&-more {
+			display: none;
+			position: relative;
+			padding-right: 1.2rem;
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				background-color: color(Active);
+			}
+			&::before {
+				top: 9px;
+				right: 2px;
+				width: 12px;
+				height: 2px;
+
+				@include respond(xl-b) {
+					top: 11px;
+					right: -1px;
+				}
+			}
+			&::after {
+				top: 4px;
+				right: 7px;
+				width: 2px;
+				height: 12px;
+
+				@include respond(xl-b) {
+					top: 6px;
+					right: 4px;
+				}
+			}
+
+			&.active {
+				&::after {
+					display: none;
+				}
+			}
+
+			@include respond(lg) {
+				display: inline-block;
+			}
+			@include respond(xl-b) {
+				font-size: 1.25rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@use "./functions" as *;
+@use "./breakpoints" as *;
+
+.container {
+	margin: 0 auto;
+	background-color: color(White-clr);
+
+	@include respond(xxl) {
+		max-width: 1600px;
+	}
+}
+
+.link--active {
+	color: color(Active) !important;
+}
