@@ -593,13 +593,13 @@ header .nav--more {
   header .nav--more {
     display: none;
     color: hsl(0deg, 0%, 0%);
-    padding: 1.9rem 0 0;
+    padding: 2.5rem 0 0;
     margin-left: -80px;
   }
 }
 @media screen and (min-width: 80rem) {
   header .nav--more {
-    padding: 2.75rem 0 0.8rem;
+    padding: 3.3rem 0 0.9rem;
     margin-left: -100px;
   }
 }
@@ -613,7 +613,7 @@ header .nav--more h2 {
 @media screen and (min-width: 64rem) {
   header .nav--more h2 {
     font-size: 1.5rem;
-    margin: 0.55rem 0;
+    margin: 0;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -655,6 +655,11 @@ header .nav-container > div {
     column-gap: 1.88rem;
   }
 }
+@media screen and (min-width: 100rem) {
+  header .nav-container > div {
+    column-gap: 2.5rem;
+  }
+}
 header .nav--links > div {
   display: flex;
   margin: 0.75rem 0;
@@ -675,6 +680,11 @@ header .nav--links > div {
   header .nav--links > div {
     column-gap: 1.9rem;
     margin: 1.25rem 0 3rem;
+  }
+}
+@media screen and (min-width: 100rem) {
+  header .nav--links > div {
+    column-gap: 2.5rem;
   }
 }
 header .nav--links a {
@@ -713,25 +723,32 @@ header .content-container {
   padding-bottom: 1rem;
   overflow-x: auto;
   column-gap: 2.2rem;
+  column-gap: 0.6rem;
   grid-template-columns: repeat(4, 1fr);
 }
 @media screen and (min-width: 64rem) {
   header .content-container {
     column-gap: 1.65rem;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 100rem) {
+  header .content-container {
+    column-gap: 2.4rem;
   }
 }
 header .content {
   width: 200px;
 }
-@media screen and (min-width: 48rem) {
-  header .content {
-    width: 250px;
-  }
-}
 @media screen and (min-width: 64rem) {
   header .content {
     width: initial;
     margin: 0.5rem 0;
+  }
+}
+@media screen and (min-width: 80rem) {
+  header .content {
+    margin: 1rem 0;
   }
 }
 header .content .title {
@@ -761,6 +778,7 @@ header .content .description {
 @media screen and (min-width: 80rem) {
   header .content .description {
     font-size: 1.25rem;
+    margin: 0.3rem 0;
   }
 }
 header .nav-link {
@@ -838,7 +856,7 @@ header.active .nav {
 @media screen and (min-width: 64rem) {
   .nav-scroll {
     position: sticky;
-    top: -66px;
+    top: -69px;
     left: 0;
     right: 0;
     z-index: 9;
@@ -848,6 +866,11 @@ header.active .nav {
   .nav-scroll {
     padding: 1.65rem 2.5rem 1.5rem;
     column-gap: 1.85rem;
+  }
+}
+@media screen and (min-width: 100rem) {
+  .nav-scroll {
+    column-gap: 2.5rem;
   }
 }
 .nav-scroll a {
@@ -862,7 +885,7 @@ header.active .nav {
 
 .hero {
   display: grid;
-  height: calc(100vh - 129.767px);
+  height: calc(100vh - 129.7667px);
   margin: 0 min(135px, 8vw);
   place-items: center;
   background: #eee url(../images/main/hero.avif) no-repeat center/cover;

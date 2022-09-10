@@ -15,15 +15,17 @@
 
 	@include respond(lg) {
 		position: sticky;
-		top: -66px;
+		top: -69px;
 		left: 0;
 		right: 0;
 		z-index: 9;
 	}
-
 	@include respond(xl-b) {
 		padding: 1.65rem 2.5rem 1.5rem;
 		column-gap: 1.85rem;
+	}
+	@include respond(xxl) {
+		column-gap: 2.5rem;
 	}
 
 	a {
