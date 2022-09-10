@@ -1,0 +1,39 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/breakpoints" as *;
+
+.article {
+	line-height: 1.5;
+	padding: min(135px, 8vw) 0;
+	margin: 0 min(135px, 8vw);
+
+	@include respond(md) {
+		width: 67vw;
+		margin: 0 auto;
+	}
+	@include respond(xl-b) {
+		width: min(800px, 50vw);
+	}
+
+	h2 {
+		font-size: 1.25rem;
+		margin: 0;
+
+		@include respond(xl-a) {
+			font-size: 1.87rem;
+			line-height: 1.4;
+		}
+	}
+
+	p {
+		margin: 0.9rem 0 0;
+
+		@include respond(xl-a) {
+			font-size: 1.25rem;
+			margin: 1.4rem 0 0;
+		}
+	}
+
+	a {
+		color: color(Secondary);
+	}
+}

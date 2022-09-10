@@ -1,0 +1,40 @@
+@use "../abstracts/breakpoints" as *;
+
+.video {
+	margin: 0 min(135px, 8vw);
+
+	@include respond(md) {
+		width: 67vw;
+		margin: 0 auto;
+	}
+	@include respond(xl-b) {
+		width: min(800px, 50vw);
+	}
+
+	a {
+		position: relative;
+		display: block;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 75px;
+			height: 75px;
+			z-index: 1;
+			transform: translate(-50%, -50%);
+			background: url(../images/svg/play.svg) no-repeat center/cover;
+
+			@include respond(xl-b) {
+				width: 100px;
+				height: 100px;
+			}
+		}
+	}
+
+	p {
+		font-size: 0.9rem;
+		margin: 0.5rem 0;
+	}
+}

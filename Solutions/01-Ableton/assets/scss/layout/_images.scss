@@ -1,0 +1,99 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/breakpoints" as *;
+
+.images {
+	position: relative;
+
+	.shape {
+		position: relative;
+	}
+
+	.img-container {
+		display: flex;
+		position: absolute;
+		left: 0;
+		right: 0;
+		column-gap: min(135px, 8vw);
+		margin: 0 min(135px, 8vw);
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-one {
+		.square {
+			left: calc(100% - 58.5vw);
+			width: min(933.5px, 58.5vw);
+			height: min(933.5px, 58.5vw);
+			background-color: color(Shape-a);
+
+			@include respond(xxl) {
+				left: calc(100% - 933.5px);
+			}
+		}
+
+		.img-container {
+			top: min(133.25px, 8.249vw);
+		}
+
+		.photo-a {
+			width: min(667px, 42vw);
+		}
+		.photo-b {
+			width: min(533.5px, 33.5vw);
+		}
+	}
+
+	&-two {
+		.rectangle {
+			width: min(933.5px, 58.5vw);
+			height: min(1200px, 75vw);
+			background-color: color(Shape-b);
+		}
+
+		.img-container {
+			top: min(135.1335px, 8.447vw);
+		}
+
+		.section-one {
+			display: flex;
+			row-gap: min(135px, 8vw);
+			align-items: flex-start;
+			flex-direction: column;
+		}
+
+		.photo-a {
+			width: min(533.5px, 33.33333vw);
+		}
+		.photo-b {
+			width: min(533.5px, 33.33333vw);
+		}
+		.photo-c {
+			width: min(667px, 42vw);
+		}
+	}
+
+	&-three {
+		.rectangle {
+			left: calc(100% - 83.5vw);
+			width: min(1067px, 67vw);
+			height: min(933.5px, 58.5vw);
+			background-color: color(Shape-c);
+
+			@include respond(xxl) {
+				left: calc(100% - 1333.5px);
+			}
+		}
+
+		.img-container {
+			top: min(133.25px, 8.249vw);
+			margin: 0 0 0 min(135px, 8vw);
+		}
+
+		.photo-a {
+			width: min(533.5px, 33.5vw);
+		}
+		.photo-b {
+			width: min(667px, 42vw);
+		}
+	}
+}

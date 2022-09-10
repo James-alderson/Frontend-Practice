@@ -1,0 +1,56 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/breakpoints" as *;
+
+.card {
+	margin: 0 min(135px, 8vw);
+	background-color: color(Card);
+
+	@include respond(xl-b) {
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		width: 100%;
+		height: 50vw;
+		object-fit: cover;
+
+		@include respond(xl-b) {
+			flex: 1;
+			height: min(667px, 42vw);
+		}
+	}
+
+	&__content {
+		padding: 8.5vw;
+
+		@include respond(xl-b) {
+			flex: 1;
+			padding: 0;
+		}
+	}
+
+	&__container {
+		@include respond(xl-b) {
+			width: min(400px, 25vw);
+			margin: 0 auto;
+		}
+	}
+
+	&__description {
+		font-size: 1.25rem;
+		font-weight: 500;
+		line-height: 1.5;
+		margin: 0 0 1.5rem;
+
+		@include respond(xl-a) {
+			font-size: 1.875rem;
+		}
+	}
+
+	a {
+		color: color(Secondary);
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+}

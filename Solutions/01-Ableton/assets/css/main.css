@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Futura";
   font-weight: 500;
@@ -20,8 +21,19 @@
   }
 }
 
+.img-main {
+  width: min(1333px, 83.3vw);
+  margin: 0 auto;
+}
+
 .link--active {
   color: hsl(14deg, 100%, 65%) !important;
+}
+
+.link--arrow::after {
+  content: "›";
+  display: inline-block;
+  margin-left: 0.3rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -356,6 +368,10 @@ svg {
   height: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: hsl(0deg, 0%, 0%);
   text-decoration: none;
@@ -372,6 +388,59 @@ h6 {
 
 h2 {
   font-size: 1.5rem;
+}
+
+.card {
+  margin: 0 min(135px, 8vw);
+  background-color: hsl(225deg, 100%, 85%);
+}
+@media screen and (min-width: 80rem) {
+  .card {
+    display: flex;
+    align-items: center;
+  }
+}
+.card__img {
+  width: 100%;
+  height: 50vw;
+  object-fit: cover;
+}
+@media screen and (min-width: 80rem) {
+  .card__img {
+    flex: 1;
+    height: min(667px, 42vw);
+  }
+}
+.card__content {
+  padding: 8.5vw;
+}
+@media screen and (min-width: 80rem) {
+  .card__content {
+    flex: 1;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .card__container {
+    width: min(400px, 25vw);
+    margin: 0 auto;
+  }
+}
+.card__description {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
+}
+@media screen and (min-width: 70.25rem) {
+  .card__description {
+    font-size: 1.875rem;
+  }
+}
+.card a {
+  color: hsl(240deg, 100%, 50%);
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .btn {
@@ -811,6 +880,166 @@ header.active .nav {
   .hero-logo {
     width: 430px;
   }
+}
+
+.article {
+  line-height: 1.5;
+  padding: min(135px, 8vw) 0;
+  margin: 0 min(135px, 8vw);
+}
+@media screen and (min-width: 48rem) {
+  .article {
+    width: 67vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .article {
+    width: min(800px, 50vw);
+  }
+}
+.article h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+@media screen and (min-width: 70.25rem) {
+  .article h2 {
+    font-size: 1.87rem;
+    line-height: 1.4;
+  }
+}
+.article p {
+  margin: 0.9rem 0 0;
+}
+@media screen and (min-width: 70.25rem) {
+  .article p {
+    font-size: 1.25rem;
+    margin: 1.4rem 0 0;
+  }
+}
+.article a {
+  color: hsl(240deg, 100%, 50%);
+}
+
+.images {
+  position: relative;
+}
+.images .shape {
+  position: relative;
+}
+.images .img-container {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  column-gap: min(135px, 8vw);
+  margin: 0 min(135px, 8vw);
+  align-items: center;
+  justify-content: space-between;
+}
+.images-one .square {
+  left: calc(100% - 58.5vw);
+  width: min(933.5px, 58.5vw);
+  height: min(933.5px, 58.5vw);
+  background-color: hsl(63deg, 100%, 83%);
+}
+@media screen and (min-width: 100rem) {
+  .images-one .square {
+    left: calc(100% - 933.5px);
+  }
+}
+.images-one .img-container {
+  top: min(133.25px, 8.249vw);
+}
+.images-one .photo-a {
+  width: min(667px, 42vw);
+}
+.images-one .photo-b {
+  width: min(533.5px, 33.5vw);
+}
+.images-two .rectangle {
+  width: min(933.5px, 58.5vw);
+  height: min(1200px, 75vw);
+  background-color: hsl(128deg, 100%, 86%);
+}
+.images-two .img-container {
+  top: min(135.1335px, 8.447vw);
+}
+.images-two .section-one {
+  display: flex;
+  row-gap: min(135px, 8vw);
+  align-items: flex-start;
+  flex-direction: column;
+}
+.images-two .photo-a {
+  width: min(533.5px, 33.33333vw);
+}
+.images-two .photo-b {
+  width: min(533.5px, 33.33333vw);
+}
+.images-two .photo-c {
+  width: min(667px, 42vw);
+}
+.images-three .rectangle {
+  left: calc(100% - 83.5vw);
+  width: min(1067px, 67vw);
+  height: min(933.5px, 58.5vw);
+  background-color: hsl(267deg, 100%, 85%);
+}
+@media screen and (min-width: 100rem) {
+  .images-three .rectangle {
+    left: calc(100% - 1333.5px);
+  }
+}
+.images-three .img-container {
+  top: min(133.25px, 8.249vw);
+  margin: 0 0 0 min(135px, 8vw);
+}
+.images-three .photo-a {
+  width: min(533.5px, 33.5vw);
+}
+.images-three .photo-b {
+  width: min(667px, 42vw);
+}
+
+.video {
+  margin: 0 min(135px, 8vw);
+}
+@media screen and (min-width: 48rem) {
+  .video {
+    width: 67vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .video {
+    width: min(800px, 50vw);
+  }
+}
+.video a {
+  position: relative;
+  display: block;
+}
+.video a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75px;
+  height: 75px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  background: url(../images/svg/play.svg) no-repeat center/cover;
+}
+@media screen and (min-width: 80rem) {
+  .video a::after {
+    width: 100px;
+    height: 100px;
+  }
+}
+.video p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */
