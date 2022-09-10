@@ -1,7 +1,7 @@
 @use "../abstracts/functions" as *;
 @use "../abstracts/breakpoints" as *;
 
-header {
+.header {
 	padding: 1.25rem;
 	border-bottom: 2px solid #eee;
 	background-color: color(White-clr);
@@ -14,7 +14,7 @@ header {
 		padding: 1.25rem 2.5rem;
 	}
 
-	.header-container {
+	&__container {
 		display: flex;
 		align-items: center;
 	}
@@ -57,7 +57,76 @@ header {
 			margin-top: 2.5px;
 		}
 
-		&--more {
+		&__container {
+			@include respond(lg) {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			> div {
+				display: flex;
+				row-gap: 1.7rem;
+				margin-bottom: 1.7rem;
+				align-items: flex-start;
+				flex-direction: column;
+
+				@include respond(lg) {
+					margin-bottom: 0;
+					column-gap: 1.25rem;
+					align-items: center;
+					flex-direction: row;
+				}
+				@include respond(xl-b) {
+					column-gap: 1.88rem;
+				}
+				@include respond(xxl) {
+					column-gap: 2.5rem;
+				}
+			}
+		}
+
+		&__link {
+			color: color(White-clr);
+			font-size: 1.25rem;
+			font-weight: 500;
+
+			@include respond(lg) {
+				color: color(Black-clr);
+				font-size: 1rem;
+			}
+			@include respond(xl-b) {
+				font-size: 1.25rem;
+			}
+
+			&--try-live {
+				font-size: 1.25rem;
+				font-weight: 500;
+
+				@include respond(lg) {
+					color: color(Secondary);
+					font-size: 0.9rem;
+					font-weight: 400;
+				}
+				@include respond(xl-b) {
+					font-size: 1.3rem;
+					font-weight: 500;
+				}
+			}
+
+			&--login-register {
+				font-size: 0.88rem;
+
+				@include respond(lg) {
+					font-weight: 400;
+				}
+				@include respond(xl-b) {
+					font-size: 1rem;
+					font-weight: 500;
+				}
+			}
+		}
+
+		&__more {
 			color: color(White-clr);
 
 			@include respond(lg) {
@@ -96,192 +165,123 @@ header {
 				}
 			}
 		}
-	}
 
-	.nav-container {
-		@include respond(lg) {
-			display: flex;
-			justify-content: space-between;
-		}
+		&__links {
+			> div {
+				display: flex;
+				margin: 0.75rem 0;
+				row-gap: 1.15rem;
+				align-items: flex-start;
+				flex-direction: column;
+				margin-bottom: 2rem;
 
-		> div {
-			display: flex;
-			row-gap: 1.7rem;
-			margin-bottom: 1.7rem;
-			align-items: flex-start;
-			flex-direction: column;
-
-			@include respond(lg) {
-				margin-bottom: 0;
-				column-gap: 1.25rem;
-				align-items: center;
-				flex-direction: row;
+				@include respond(lg) {
+					flex-direction: row;
+					column-gap: 1.25rem;
+					align-items: center;
+					margin: 0.78rem 0 2rem;
+				}
+				@include respond(xl-b) {
+					column-gap: 1.9rem;
+					margin: 1.25rem 0 3rem;
+				}
+				@include respond(xxl) {
+					column-gap: 2.5rem;
+				}
 			}
-			@include respond(xl-b) {
-				column-gap: 1.88rem;
-			}
-			@include respond(xxl) {
-				column-gap: 2.5rem;
-			}
-		}
-	}
 
-	.nav--links {
-		> div {
-			display: flex;
-			margin: 0.75rem 0;
-			row-gap: 1.15rem;
-			align-items: flex-start;
-			flex-direction: column;
-			margin-bottom: 2rem;
-
-			@include respond(lg) {
-				flex-direction: row;
-				column-gap: 1.25rem;
-				align-items: center;
-				margin: 0.78rem 0 2rem;
-			}
-			@include respond(xl-b) {
-				column-gap: 1.9rem;
-				margin: 1.25rem 0 3rem;
-			}
-			@include respond(xxl) {
-				column-gap: 2.5rem;
-			}
-		}
-
-		a {
-			font-size: 0.9rem;
-
-			@include respond(lg) {
-				font-size: 1rem;
-			}
-			@include respond(xl-b) {
-				font-size: 1.25rem;
-			}
-		}
-	}
-
-	.nav--content {
-		position: relative;
-
-		&::after {
-			content: "";
-			position: absolute;
-			top: 40px;
-			bottom: 16px;
-			right: 0;
-			width: 40px;
-			background: linear-gradient(
-				to right,
-				rgba(color(Secondary), 0),
-				color(Secondary)
-			);
-
-			@include respond(lg) {
-				display: none;
-			}
-		}
-	}
-
-	.content-container {
-		display: grid;
-		position: relative;
-		padding-bottom: 1rem;
-		overflow-x: auto;
-		column-gap: 2.2rem;
-		column-gap: 0.6rem;
-		grid-template-columns: repeat(4, 1fr);
-
-		@include respond(lg) {
-			column-gap: 1.65rem;
-			padding-bottom: 0;
-		}
-		@include respond(xxl) {
-			column-gap: 2.4rem;
-		}
-	}
-
-	.content {
-		width: 200px;
-
-		@include respond(lg) {
-			width: initial;
-			margin: 0.5rem 0;
-		}
-		@include respond(xl-b) {
-			margin: 1rem 0;
-		}
-
-		.title {
-			font-size: 0.85rem;
-			margin: 0;
-
-			@include respond(lg) {
-				font-size: 1rem;
-			}
-			@include respond(xl-b) {
-				font-size: 1.25rem;
-			}
-		}
-
-		.description {
-			font-size: 0.87rem;
-			line-height: 1.5;
-			margin: 0.15rem 0;
-
-			@include respond(lg) {
-				font-size: 1rem;
-			}
-			@include respond(xl-b) {
-				font-size: 1.25rem;
-				margin: 0.3rem 0;
-			}
-		}
-	}
-
-	.nav-link {
-		color: color(White-clr);
-		font-size: 1.25rem;
-		font-weight: 500;
-
-		@include respond(lg) {
-			color: color(Black-clr);
-			font-size: 1rem;
-		}
-		@include respond(xl-b) {
-			font-size: 1.25rem;
-		}
-
-		&--try-live {
-			font-size: 1.25rem;
-			font-weight: 500;
-
-			@include respond(lg) {
-				color: color(Secondary);
+			a {
 				font-size: 0.9rem;
-				font-weight: 400;
-			}
-			@include respond(xl-b) {
-				font-size: 1.3rem;
-				font-weight: 500;
+
+				@include respond(lg) {
+					font-size: 1rem;
+				}
+				@include respond(xl-b) {
+					font-size: 1.25rem;
+				}
 			}
 		}
 
-		&--login-register {
-			font-size: 0.88rem;
+		&__content {
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 40px;
+				bottom: 16px;
+				right: 0;
+				width: 40px;
+				background: linear-gradient(
+					to right,
+					rgba(color(Secondary), 0),
+					color(Secondary)
+				);
+
+				@include respond(lg) {
+					display: none;
+				}
+			}
+		}
+
+		.contents {
+			display: grid;
+			position: relative;
+			padding-bottom: 1rem;
+			overflow-x: auto;
+			column-gap: 2.2rem;
+			column-gap: 0.6rem;
+			grid-template-columns: repeat(4, 1fr);
 
 			@include respond(lg) {
-				font-weight: 400;
+				column-gap: 1.65rem;
+				padding-bottom: 0;
+			}
+			@include respond(xxl) {
+				column-gap: 2.4rem;
+			}
+		}
+
+		.content {
+			width: 200px;
+
+			@include respond(lg) {
+				width: initial;
+				margin: 0.5rem 0;
 			}
 			@include respond(xl-b) {
-				font-size: 1rem;
-				font-weight: 500;
+				margin: 1rem 0;
+			}
+
+			&__title {
+				font-size: 0.85rem;
+				margin: 0;
+
+				@include respond(lg) {
+					font-size: 1rem;
+				}
+				@include respond(xl-b) {
+					font-size: 1.25rem;
+				}
+			}
+
+			&__description {
+				font-size: 0.87rem;
+				line-height: 1.5;
+				margin: 0.15rem 0;
+
+				@include respond(lg) {
+					font-size: 1rem;
+				}
+				@include respond(xl-b) {
+					font-size: 1.25rem;
+					margin: 0.3rem 0;
+				}
 			}
 		}
 	}
 
-	/* ---- Active styles ---- */
+	/* ---- (Mobile resolution) When .header element have .active class ---- */
 	&.active {
 		.logo {
 			svg {

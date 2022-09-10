@@ -8,7 +8,7 @@
 		position: relative;
 	}
 
-	.img-container {
+	&__container {
 		display: flex;
 		position: absolute;
 		left: 0;
@@ -31,7 +31,7 @@
 			}
 		}
 
-		.img-container {
+		.images__container {
 			top: min(133.25px, 8.249vw);
 		}
 
@@ -50,7 +50,7 @@
 			background-color: color(Shape-b);
 		}
 
-		.img-container {
+		.images__container {
 			top: min(135.1335px, 8.447vw);
 		}
 
@@ -84,7 +84,7 @@
 			}
 		}
 
-		.img-container {
+		.images__container {
 			top: min(133.25px, 8.249vw);
 			margin: 0 0 0 min(135px, 8vw);
 		}

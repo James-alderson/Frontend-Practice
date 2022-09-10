@@ -21,7 +21,7 @@
   }
 }
 
-.img-main {
+.image-main {
   width: min(1333px, 83.3vw);
   margin: 0 auto;
 }
@@ -523,47 +523,47 @@ h2 {
   }
 }
 
-header {
+.header {
   padding: 1.25rem;
   border-bottom: 2px solid #eee;
   background-color: hsl(0deg, 0%, 100%);
-  /* ---- Active styles ---- */
+  /* ---- (Mobile resolution) When .header element have .active class ---- */
 }
 @media screen and (min-width: 64rem) {
-  header {
+  .header {
     display: flex;
     align-items: flex-start;
   }
 }
 @media screen and (min-width: 80rem) {
-  header {
+  .header {
     padding: 1.25rem 2.5rem;
   }
 }
-header .header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
-header .logo {
+.header .logo {
   z-index: 9;
   margin-right: 2rem;
 }
 @media screen and (min-width: 64rem) {
-  header .logo {
+  .header .logo {
     margin-right: 1.25rem;
   }
 }
 @media screen and (min-width: 80rem) {
-  header .logo {
+  .header .logo {
     margin-right: 2.5rem;
   }
 }
-header .logo svg {
+.header .logo svg {
   width: 60px;
   fill: hsl(0deg, 0%, 0%);
   transition: fill 0.3s ease-out;
 }
-header .nav {
+.header .nav {
   position: absolute;
   top: -930px;
   left: 0;
@@ -573,7 +573,7 @@ header .nav {
   background-color: hsl(240deg, 100%, 50%);
 }
 @media screen and (min-width: 64rem) {
-  header .nav {
+  .header .nav {
     flex: 1;
     position: static;
     padding: 0;
@@ -582,60 +582,17 @@ header .nav {
   }
 }
 @media screen and (min-width: 80rem) {
-  header .nav {
+  .header .nav {
     margin-top: 2.5px;
   }
 }
-header .nav--more {
-  color: hsl(0deg, 0%, 100%);
-}
 @media screen and (min-width: 64rem) {
-  header .nav--more {
-    display: none;
-    color: hsl(0deg, 0%, 0%);
-    padding: 2.5rem 0 0;
-    margin-left: -80px;
-  }
-}
-@media screen and (min-width: 80rem) {
-  header .nav--more {
-    padding: 3.3rem 0 0.9rem;
-    margin-left: -100px;
-  }
-}
-header .nav--more.active {
-  display: block;
-}
-header .nav--more h2 {
-  font-size: 1.25rem;
-  margin: 1.1rem 0;
-}
-@media screen and (min-width: 64rem) {
-  header .nav--more h2 {
-    font-size: 1.5rem;
-    margin: 0;
-  }
-}
-@media screen and (min-width: 80rem) {
-  header .nav--more h2 {
-    font-size: 1.87rem;
-  }
-}
-header .nav--more a {
-  color: hsl(0deg, 0%, 100%);
-}
-@media screen and (min-width: 64rem) {
-  header .nav--more a {
-    color: hsl(0deg, 0%, 0%);
-  }
-}
-@media screen and (min-width: 64rem) {
-  header .nav-container {
+  .header .nav__container {
     display: flex;
     justify-content: space-between;
   }
 }
-header .nav-container > div {
+.header .nav__container > div {
   display: flex;
   row-gap: 1.7rem;
   margin-bottom: 1.7rem;
@@ -643,7 +600,7 @@ header .nav-container > div {
   flex-direction: column;
 }
 @media screen and (min-width: 64rem) {
-  header .nav-container > div {
+  .header .nav__container > div {
     margin-bottom: 0;
     column-gap: 1.25rem;
     align-items: center;
@@ -651,16 +608,106 @@ header .nav-container > div {
   }
 }
 @media screen and (min-width: 80rem) {
-  header .nav-container > div {
+  .header .nav__container > div {
     column-gap: 1.88rem;
   }
 }
 @media screen and (min-width: 100rem) {
-  header .nav-container > div {
+  .header .nav__container > div {
     column-gap: 2.5rem;
   }
 }
-header .nav--links > div {
+.header .nav__link {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 64rem) {
+  .header .nav__link {
+    color: hsl(0deg, 0%, 0%);
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header .nav__link {
+    font-size: 1.25rem;
+  }
+}
+.header .nav__link--try-live {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 64rem) {
+  .header .nav__link--try-live {
+    color: hsl(240deg, 100%, 50%);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header .nav__link--try-live {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
+.header .nav__link--login-register {
+  font-size: 0.88rem;
+}
+@media screen and (min-width: 64rem) {
+  .header .nav__link--login-register {
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header .nav__link--login-register {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+.header .nav__more {
+  color: hsl(0deg, 0%, 100%);
+}
+@media screen and (min-width: 64rem) {
+  .header .nav__more {
+    display: none;
+    color: hsl(0deg, 0%, 0%);
+    padding: 2.5rem 0 0;
+    margin-left: -80px;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header .nav__more {
+    padding: 3.3rem 0 0.9rem;
+    margin-left: -100px;
+  }
+}
+.header .nav__more.active {
+  display: block;
+}
+.header .nav__more h2 {
+  font-size: 1.25rem;
+  margin: 1.1rem 0;
+}
+@media screen and (min-width: 64rem) {
+  .header .nav__more h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header .nav__more h2 {
+    font-size: 1.87rem;
+  }
+}
+.header .nav__more a {
+  color: hsl(0deg, 0%, 100%);
+}
+@media screen and (min-width: 64rem) {
+  .header .nav__more a {
+    color: hsl(0deg, 0%, 0%);
+  }
+}
+.header .nav__links > div {
   display: flex;
   margin: 0.75rem 0;
   row-gap: 1.15rem;
@@ -669,7 +716,7 @@ header .nav--links > div {
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 64rem) {
-  header .nav--links > div {
+  .header .nav__links > div {
     flex-direction: row;
     column-gap: 1.25rem;
     align-items: center;
@@ -677,33 +724,33 @@ header .nav--links > div {
   }
 }
 @media screen and (min-width: 80rem) {
-  header .nav--links > div {
+  .header .nav__links > div {
     column-gap: 1.9rem;
     margin: 1.25rem 0 3rem;
   }
 }
 @media screen and (min-width: 100rem) {
-  header .nav--links > div {
+  .header .nav__links > div {
     column-gap: 2.5rem;
   }
 }
-header .nav--links a {
+.header .nav__links a {
   font-size: 0.9rem;
 }
 @media screen and (min-width: 64rem) {
-  header .nav--links a {
+  .header .nav__links a {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 80rem) {
-  header .nav--links a {
+  .header .nav__links a {
     font-size: 1.25rem;
   }
 }
-header .nav--content {
+.header .nav__content {
   position: relative;
 }
-header .nav--content::after {
+.header .nav__content::after {
   content: "";
   position: absolute;
   top: 40px;
@@ -713,11 +760,11 @@ header .nav--content::after {
   background: linear-gradient(to right, rgba(0, 0, 255, 0), hsl(240deg, 100%, 50%));
 }
 @media screen and (min-width: 64rem) {
-  header .nav--content::after {
+  .header .nav__content::after {
     display: none;
   }
 }
-header .content-container {
+.header .nav .contents {
   display: grid;
   position: relative;
   padding-bottom: 1rem;
@@ -727,118 +774,71 @@ header .content-container {
   grid-template-columns: repeat(4, 1fr);
 }
 @media screen and (min-width: 64rem) {
-  header .content-container {
+  .header .nav .contents {
     column-gap: 1.65rem;
     padding-bottom: 0;
   }
 }
 @media screen and (min-width: 100rem) {
-  header .content-container {
+  .header .nav .contents {
     column-gap: 2.4rem;
   }
 }
-header .content {
+.header .nav .content {
   width: 200px;
 }
 @media screen and (min-width: 64rem) {
-  header .content {
+  .header .nav .content {
     width: initial;
     margin: 0.5rem 0;
   }
 }
 @media screen and (min-width: 80rem) {
-  header .content {
+  .header .nav .content {
     margin: 1rem 0;
   }
 }
-header .content .title {
+.header .nav .content__title {
   font-size: 0.85rem;
   margin: 0;
 }
 @media screen and (min-width: 64rem) {
-  header .content .title {
+  .header .nav .content__title {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 80rem) {
-  header .content .title {
+  .header .nav .content__title {
     font-size: 1.25rem;
   }
 }
-header .content .description {
+.header .nav .content__description {
   font-size: 0.87rem;
   line-height: 1.5;
   margin: 0.15rem 0;
 }
 @media screen and (min-width: 64rem) {
-  header .content .description {
+  .header .nav .content__description {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 80rem) {
-  header .content .description {
+  .header .nav .content__description {
     font-size: 1.25rem;
     margin: 0.3rem 0;
   }
 }
-header .nav-link {
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-@media screen and (min-width: 64rem) {
-  header .nav-link {
-    color: hsl(0deg, 0%, 0%);
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  header .nav-link {
-    font-size: 1.25rem;
-  }
-}
-header .nav-link--try-live {
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-@media screen and (min-width: 64rem) {
-  header .nav-link--try-live {
-    color: hsl(240deg, 100%, 50%);
-    font-size: 0.9rem;
-    font-weight: 400;
-  }
-}
-@media screen and (min-width: 80rem) {
-  header .nav-link--try-live {
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-}
-header .nav-link--login-register {
-  font-size: 0.88rem;
-}
-@media screen and (min-width: 64rem) {
-  header .nav-link--login-register {
-    font-weight: 400;
-  }
-}
-@media screen and (min-width: 80rem) {
-  header .nav-link--login-register {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-}
-header.active .logo svg {
+.header.active .logo svg {
   fill: hsl(0deg, 0%, 100%);
 }
-header.active #navMenuBtn {
+.header.active #navMenuBtn {
   color: hsl(0deg, 0%, 100%);
 }
-header.active #navMenuBtn::after {
+.header.active #navMenuBtn::after {
   transform: rotate(180deg);
   border-top-color: hsl(0deg, 0%, 100%);
 }
-header.active .nav {
+.header.active .nav {
   top: 0;
 }
 
@@ -895,12 +895,11 @@ header.active .nav {
     height: calc(100vh - 138.8px);
   }
 }
-
-.hero-logo {
+.hero__logo {
   width: 215px;
 }
 @media screen and (min-width: 48rem) {
-  .hero-logo {
+  .hero__logo {
     width: 430px;
   }
 }
@@ -950,7 +949,7 @@ header.active .nav {
 .images .shape {
   position: relative;
 }
-.images .img-container {
+.images__container {
   display: flex;
   position: absolute;
   left: 0;
@@ -971,7 +970,7 @@ header.active .nav {
     left: calc(100% - 933.5px);
   }
 }
-.images-one .img-container {
+.images-one .images__container {
   top: min(133.25px, 8.249vw);
 }
 .images-one .photo-a {
@@ -985,7 +984,7 @@ header.active .nav {
   height: min(1200px, 75vw);
   background-color: hsl(128deg, 100%, 86%);
 }
-.images-two .img-container {
+.images-two .images__container {
   top: min(135.1335px, 8.447vw);
 }
 .images-two .section-one {
@@ -1014,7 +1013,7 @@ header.active .nav {
     left: calc(100% - 1333.5px);
   }
 }
-.images-three .img-container {
+.images-three .images__container {
   top: min(133.25px, 8.249vw);
   margin: 0 0 0 min(135px, 8vw);
 }

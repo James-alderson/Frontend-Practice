@@ -11,12 +11,12 @@
 	@include respond(xl-b) {
 		height: calc(100vh - 138.8px);
 	}
-}
 
-.hero-logo {
-	width: 215px;
+	&__logo {
+		width: 215px;
 
-	@include respond(md) {
-		width: 430px;
+		@include respond(md) {
+			width: 430px;
+		}
 	}
 }
