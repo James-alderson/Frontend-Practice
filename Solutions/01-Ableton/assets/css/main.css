@@ -684,30 +684,23 @@ h2 {
 .header .nav__more.active {
   display: block;
 }
-.header .nav__more h2 {
+.header .nav__more__title {
   font-size: 1.25rem;
+  font-weight: 500;
   margin: 1.1rem 0;
 }
 @media screen and (min-width: 64rem) {
-  .header .nav__more h2 {
+  .header .nav__more__title {
     font-size: 1.5rem;
     margin: 0;
   }
 }
 @media screen and (min-width: 80rem) {
-  .header .nav__more h2 {
+  .header .nav__more__title {
     font-size: 1.87rem;
   }
 }
-.header .nav__more a {
-  color: hsl(0deg, 0%, 100%);
-}
-@media screen and (min-width: 64rem) {
-  .header .nav__more a {
-    color: hsl(0deg, 0%, 0%);
-  }
-}
-.header .nav__links > div {
+.header .nav__more__container {
   display: flex;
   margin: 0.75rem 0;
   row-gap: 1.15rem;
@@ -716,7 +709,7 @@ h2 {
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 64rem) {
-  .header .nav__links > div {
+  .header .nav__more__container {
     flex-direction: row;
     column-gap: 1.25rem;
     align-items: center;
@@ -724,14 +717,22 @@ h2 {
   }
 }
 @media screen and (min-width: 80rem) {
-  .header .nav__links > div {
+  .header .nav__more__container {
     column-gap: 1.9rem;
     margin: 1.25rem 0 3rem;
   }
 }
 @media screen and (min-width: 100rem) {
-  .header .nav__links > div {
+  .header .nav__more__container {
     column-gap: 2.5rem;
+  }
+}
+.header .nav__more a {
+  color: hsl(0deg, 0%, 100%);
+}
+@media screen and (min-width: 64rem) {
+  .header .nav__more a {
+    color: hsl(0deg, 0%, 0%);
   }
 }
 .header .nav__links a {
@@ -800,6 +801,7 @@ h2 {
 }
 .header .nav .content__title {
   font-size: 0.85rem;
+  font-weight: 500;
   margin: 0;
 }
 @media screen and (min-width: 64rem) {
@@ -896,11 +898,15 @@ h2 {
   }
 }
 .hero__logo {
-  width: 215px;
+  color: hsl(6deg, 98%, 64%);
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 0;
+  user-select: none;
 }
 @media screen and (min-width: 48rem) {
   .hero__logo {
-    width: 430px;
+    font-size: 8.5rem;
   }
 }
 

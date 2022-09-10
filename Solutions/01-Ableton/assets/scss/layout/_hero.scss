@@ -13,10 +13,14 @@
 	}
 
 	&__logo {
-		width: 215px;
+		color: color(Hero);
+		font-size: 4.5rem;
+		text-align: center;
+		margin: 0;
+		user-select: none;
 
 		@include respond(md) {
-			width: 430px;
+			font-size: 8.5rem;
 		}
 	}
 }
