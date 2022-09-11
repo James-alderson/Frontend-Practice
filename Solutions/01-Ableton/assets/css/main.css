@@ -1032,6 +1032,7 @@ h2 {
 
 .video {
   margin: 0 min(135px, 8vw);
+  /* When .video element have .active class */
 }
 @media screen and (min-width: 48rem) {
   .video {
@@ -1044,11 +1045,10 @@ h2 {
     width: min(800px, 50vw);
   }
 }
-.video a {
+.video__container {
   position: relative;
-  display: block;
 }
-.video a::after {
+.video__container::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1060,14 +1060,39 @@ h2 {
   background: url(../images/svg/play.svg) no-repeat center/cover;
 }
 @media screen and (min-width: 80rem) {
-  .video a::after {
+  .video__container::after {
     width: 100px;
     height: 100px;
   }
 }
+.video__container img {
+  object-fit: cover;
+}
+.video__player {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.video__player .ytp-pause-overlay {
+  display: none;
+}
 .video p {
   font-size: 0.9rem;
   margin: 0.5rem 0;
+}
+.video.active .video__container {
+  background-color: #000;
+}
+.video.active .video__container::after {
+  display: none;
+}
+.video.active .video__container img {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
