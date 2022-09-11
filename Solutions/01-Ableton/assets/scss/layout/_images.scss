@@ -11,12 +11,17 @@
 	&__container {
 		display: flex;
 		position: absolute;
+		top: 50%;
 		left: 0;
 		right: 0;
-		column-gap: min(135px, 8vw);
-		margin: 0 min(135px, 8vw);
 		align-items: center;
+		margin: 0 min(135px, 8vw);
+		transform: translateY(-50%);
 		justify-content: space-between;
+	}
+
+	.photo {
+		object-fit: cover;
 	}
 
 	&-one {
@@ -31,15 +36,13 @@
 			}
 		}
 
-		.images__container {
-			top: min(133.25px, 8.249vw);
-		}
-
 		.photo-a {
 			width: min(667px, 42vw);
+			height: min(667px, 42vw);
 		}
 		.photo-b {
 			width: min(533.5px, 33.5vw);
+			height: min(400px, 25vw);
 		}
 	}
 
@@ -50,25 +53,21 @@
 			background-color: color(Shape-b);
 		}
 
-		.images__container {
-			top: min(135.1335px, 8.447vw);
-		}
-
 		.section-one {
 			display: flex;
-			row-gap: min(135px, 8vw);
+			row-gap: min(133.5px, 8.5vw);
 			align-items: flex-start;
 			flex-direction: column;
 		}
 
-		.photo-a {
-			width: min(533.5px, 33.33333vw);
-		}
+		.photo-a,
 		.photo-b {
 			width: min(533.5px, 33.33333vw);
+			height: min(400px, 25vw);
 		}
 		.photo-c {
 			width: min(667px, 42vw);
+			height: min(667px, 42vw);
 		}
 	}
 
@@ -85,15 +84,16 @@
 		}
 
 		.images__container {
-			top: min(133.25px, 8.249vw);
 			margin: 0 0 0 min(135px, 8vw);
 		}
 
 		.photo-a {
 			width: min(533.5px, 33.5vw);
+			height: min(400px, 25vw);
 		}
 		.photo-b {
 			width: min(667px, 42vw);
+			height: min(667px, 42vw);
 		}
 	}
 }

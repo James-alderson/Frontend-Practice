@@ -396,8 +396,9 @@ h2 {
 }
 @media screen and (min-width: 80rem) {
   .card {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .card__img {
@@ -407,7 +408,6 @@ h2 {
 }
 @media screen and (min-width: 80rem) {
   .card__img {
-    flex: 1;
     height: min(667px, 42vw);
   }
 }
@@ -416,7 +416,6 @@ h2 {
 }
 @media screen and (min-width: 80rem) {
   .card__content {
-    flex: 1;
     padding: 0;
   }
 }
@@ -890,7 +889,7 @@ h2 {
   height: calc(100vh - 129.7667px);
   margin: 0 min(135px, 8vw);
   place-items: center;
-  background: #eee url(../images/main/hero.avif) no-repeat center/cover;
+  background: #eee url(../images/main/hero.jpg) no-repeat center/cover;
 }
 @media screen and (min-width: 80rem) {
   .hero {
@@ -958,12 +957,16 @@ h2 {
 .images__container {
   display: flex;
   position: absolute;
+  top: 50%;
   left: 0;
   right: 0;
-  column-gap: min(135px, 8vw);
-  margin: 0 min(135px, 8vw);
   align-items: center;
+  margin: 0 min(135px, 8vw);
+  transform: translateY(-50%);
   justify-content: space-between;
+}
+.images .photo {
+  object-fit: cover;
 }
 .images-one .square {
   left: calc(100% - 58.5vw);
@@ -976,37 +979,33 @@ h2 {
     left: calc(100% - 933.5px);
   }
 }
-.images-one .images__container {
-  top: min(133.25px, 8.249vw);
-}
 .images-one .photo-a {
   width: min(667px, 42vw);
+  height: min(667px, 42vw);
 }
 .images-one .photo-b {
   width: min(533.5px, 33.5vw);
+  height: min(400px, 25vw);
 }
 .images-two .rectangle {
   width: min(933.5px, 58.5vw);
   height: min(1200px, 75vw);
   background-color: hsl(128deg, 100%, 86%);
 }
-.images-two .images__container {
-  top: min(135.1335px, 8.447vw);
-}
 .images-two .section-one {
   display: flex;
-  row-gap: min(135px, 8vw);
+  row-gap: min(133.5px, 8.5vw);
   align-items: flex-start;
   flex-direction: column;
 }
-.images-two .photo-a {
-  width: min(533.5px, 33.33333vw);
-}
+.images-two .photo-a,
 .images-two .photo-b {
   width: min(533.5px, 33.33333vw);
+  height: min(400px, 25vw);
 }
 .images-two .photo-c {
   width: min(667px, 42vw);
+  height: min(667px, 42vw);
 }
 .images-three .rectangle {
   left: calc(100% - 83.5vw);
@@ -1020,14 +1019,15 @@ h2 {
   }
 }
 .images-three .images__container {
-  top: min(133.25px, 8.249vw);
   margin: 0 0 0 min(135px, 8vw);
 }
 .images-three .photo-a {
   width: min(533.5px, 33.5vw);
+  height: min(400px, 25vw);
 }
 .images-three .photo-b {
   width: min(667px, 42vw);
+  height: min(667px, 42vw);
 }
 
 .video {

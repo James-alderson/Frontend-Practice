@@ -6,7 +6,7 @@
 	height: calc(100vh - 129.7667px);
 	margin: 0 min(135px, 8vw);
 	place-items: center;
-	background: #eee url(../images/main/hero.avif) no-repeat center/cover;
+	background: #eee url(../images/main/hero.jpg) no-repeat center/cover;
 
 	@include respond(xl-b) {
 		height: calc(100vh - 138.8px);
