@@ -1,0 +1,80 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/breakpoints" as *;
+
+.form {
+	&__row {
+		display: flex;
+	}
+
+	&__input {
+		flex: 1;
+		line-height: normal;
+		padding: 0.4rem 0.75rem;
+		border: none;
+		background-color: #eee;
+
+		&::placeholder {
+			color: #999;
+		}
+
+		@include respond(xl-b) {
+			font-size: 1.25rem;
+			padding: 0.5rem 0.94rem;
+		}
+	}
+
+	&__submit {
+		display: inline-block;
+		color: color(White-clr);
+		font-weight: 500;
+		padding: 0.35em 1.5em;
+		cursor: pointer;
+		border: none;
+		background-color: color(Secondary);
+
+		@include respond(xl-b) {
+			font-size: 1.25rem;
+		}
+	}
+
+	&__select {
+		appearance: none;
+		display: inline-block;
+		max-width: 200px;
+		font-size: 0.88rem;
+		line-height: normal;
+		padding: 0.35rem 3.13rem 0.35rem 0.75rem;
+		cursor: pointer;
+		border: none;
+		background-color: #eee;
+
+		&--arrow-down {
+			display: block;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 11px;
+				width: 8px;
+				height: 7px;
+				pointer-events: none;
+				transform: translateY(-50%) scaleY(0.86);
+				background: url(../images/svg/arrow-down.svg) no-repeat;
+			}
+		}
+
+		&--language {
+			option {
+				font-weight: bold;
+			}
+		}
+
+		&--location {
+			> option {
+				font-weight: bold;
+			}
+		}
+	}
+}

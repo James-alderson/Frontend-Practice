@@ -1,0 +1,190 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/breakpoints" as *;
+
+.footer {
+	padding: min(133.5px, 8.35vw) 0;
+	margin-top: min(133.5px, 8.35vw);
+	border-top: 2px solid #eee;
+
+	&__container {
+		margin: 0 min(135px, 8vw);
+	}
+
+	.logo {
+		width: 122px;
+		margin-bottom: 8.35vw;
+
+		@include respond(sm) {
+			margin-bottom: min(67px, 4.2vw);
+		}
+		@include respond(lg) {
+			width: 188px;
+		}
+	}
+
+	.contents {
+		display: grid;
+		gap: 8.5vw 0.625rem;
+
+		@include respond(sm) {
+			gap: min(67px, 4.2vw) 0.625rem;
+		}
+		@include respond(lg) {
+			grid-template-columns: 1fr 1fr 1.4fr;
+			grid-template-areas:
+				"social-media education newsletter"
+				"community distributors language-location";
+		}
+
+		.content {
+			line-height: 1.5;
+
+			@include respond(lg) {
+				&.newsletter {
+					grid-area: newsletter;
+				}
+				&.social_media {
+					grid-area: social-media;
+				}
+				&.education {
+					grid-area: education;
+				}
+				&.community {
+					grid-area: community;
+				}
+				&.distributors {
+					grid-area: distributors;
+				}
+				&.language_location {
+					grid-area: language-location;
+				}
+			}
+
+			&__title {
+				font-size: 1rem;
+				margin: 0;
+
+				@include respond(xl-b) {
+					font-size: 1.25rem;
+				}
+			}
+
+			&__description {
+				margin: 0;
+
+				@include respond(xl-b) {
+					font-size: 1.25rem;
+				}
+			}
+
+			.form {
+				margin-top: 1rem;
+
+				@include respond(xl-b) {
+					margin-top: 1.25rem;
+				}
+			}
+
+			&__list {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+
+				a {
+					@include respond(xl-b) {
+						font-size: 1.25rem;
+					}
+				}
+			}
+		}
+	}
+
+	.social-media {
+		display: flex;
+		margin-top: 0.625rem;
+		column-gap: 0.625rem;
+
+		img {
+			width: 32px;
+			height: 32px;
+
+			@include respond(sm) {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		&__facebook {
+			background-color: color(Facebook);
+		}
+		&__twitter {
+			background-color: color(Twitter);
+		}
+		&__youtube {
+			background-color: color(Youtube);
+		}
+		&__instagram {
+			background-color: color(Instagram);
+		}
+	}
+
+	.select-container {
+		display: flex;
+		gap: 2px;
+		margin-top: 0.75rem;
+		align-items: flex-start;
+		flex-direction: column;
+
+		@include respond(sm) {
+			align-items: center;
+			flex-direction: row;
+		}
+	}
+
+	.row {
+		@include respond(lg) {
+			display: flex;
+			margin-top: min(83px, calc(4.2vw + 1rem));
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.nav {
+			display: flex;
+			line-height: 1.5;
+			gap: 0.5rem 1rem;
+			margin: 8.5vw 0;
+			align-items: flex-start;
+			flex-direction: column;
+
+			@include respond(sm) {
+				margin: min(67px, 4.2vw) 0;
+			}
+			@include respond(lg) {
+				flex-direction: row;
+				align-items: center;
+				margin: 0;
+			}
+
+			&__link {
+				font-size: 0.875rem;
+			}
+		}
+
+		.logo-container {
+			display: flex;
+			column-gap: 0.9rem;
+			align-items: center;
+			margin-top: min(85.3px, 8.5vw);
+
+			@include respond(lg) {
+				margin-top: 0;
+				flex-direction: row-reverse;
+			}
+
+			span {
+				font-size: 0.875rem;
+			}
+		}
+	}
+}
