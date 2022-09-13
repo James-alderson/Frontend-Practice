@@ -524,7 +524,7 @@ h2 {
 
 .header {
   padding: 1.25rem;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid hsl(0deg, 0%, 93%);
   background-color: hsl(0deg, 0%, 100%);
   /* ---- (Mobile resolution) When .header element have .active class ---- */
 }
@@ -889,7 +889,7 @@ h2 {
   height: calc(100vh - 129.7667px);
   margin: 0 min(135px, 8vw);
   place-items: center;
-  background: #eee url(../images/main/hero.jpg) no-repeat center/cover;
+  background: hsl(0deg, 0%, 93%) url(../images/main/hero.jpg) no-repeat center/cover;
 }
 @media screen and (min-width: 80rem) {
   .hero {
@@ -1056,6 +1056,7 @@ h2 {
   width: 75px;
   height: 75px;
   z-index: 1;
+  pointer-events: none;
   transform: translate(-50%, -50%);
   background: url(../images/svg/play.svg) no-repeat center/cover;
 }
@@ -1067,6 +1068,7 @@ h2 {
 }
 .video__container img {
   object-fit: cover;
+  cursor: pointer;
 }
 .video__player {
   position: absolute;
@@ -1103,7 +1105,7 @@ h2 {
   line-height: normal;
   padding: 0.4rem 0.75rem;
   border: none;
-  background-color: #eee;
+  background-color: hsl(0deg, 0%, 93%);
 }
 .form__input::placeholder {
   color: #999;
@@ -1137,7 +1139,7 @@ h2 {
   padding: 0.35rem 3.13rem 0.35rem 0.75rem;
   cursor: pointer;
   border: none;
-  background-color: #eee;
+  background-color: hsl(0deg, 0%, 93%);
 }
 .form__select--arrow-down {
   display: block;
@@ -1164,7 +1166,7 @@ h2 {
 .footer {
   padding: min(133.5px, 8.35vw) 0;
   margin-top: min(133.5px, 8.35vw);
-  border-top: 2px solid #eee;
+  border-top: 2px solid hsl(0deg, 0%, 93%);
 }
 .footer__container {
   margin: 0 min(135px, 8vw);

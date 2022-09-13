@@ -3,7 +3,7 @@
 
 .header {
 	padding: 1.25rem;
-	border-bottom: 2px solid #eee;
+	border-bottom: 2px solid color(Gray-clr);
 	background-color: color(White-clr);
 
 	@include respond(lg) {

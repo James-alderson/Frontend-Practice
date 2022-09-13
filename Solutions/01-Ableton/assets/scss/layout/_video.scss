@@ -22,6 +22,7 @@
 			width: 75px;
 			height: 75px;
 			z-index: 1;
+			pointer-events: none;
 			transform: translate(-50%, -50%);
 			background: url(../images/svg/play.svg) no-repeat center/cover;
 
@@ -33,6 +34,7 @@
 
 		img {
 			object-fit: cover;
+			cursor: pointer;
 		}
 	}
 

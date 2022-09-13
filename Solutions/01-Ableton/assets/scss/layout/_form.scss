@@ -11,7 +11,7 @@
 		line-height: normal;
 		padding: 0.4rem 0.75rem;
 		border: none;
-		background-color: #eee;
+		background-color: color(Gray-clr);
 
 		&::placeholder {
 			color: #999;
@@ -46,7 +46,7 @@
 		padding: 0.35rem 3.13rem 0.35rem 0.75rem;
 		cursor: pointer;
 		border: none;
-		background-color: #eee;
+		background-color: color(Gray-clr);
 
 		&--arrow-down {
 			display: block;
