@@ -20,7 +20,7 @@
 	}
 
 	.logo {
-		z-index: 9;
+		z-index: 99;
 		margin-right: 2rem;
 
 		@include respond(lg) {
@@ -42,6 +42,7 @@
 		top: -930px;
 		left: 0;
 		right: 0;
+		z-index: 9;
 		padding: 4.5rem 0.9rem 0;
 		transition: top 0.5s ease-out;
 		background-color: color(Secondary);
