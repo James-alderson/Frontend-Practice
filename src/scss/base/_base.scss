@@ -1,0 +1,32 @@
+@use "../abstracts/function" as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	color: color(Black-clr);
+	font-family: font(Ubuntu);
+	background-color: color(Primary);
+}
+
+a {
+	color: color(Black-clr);
+	font-style: italic;
+	outline: none;
+	text-underline-offset: 3px;
+	text-decoration: 1px wavy underline currentColor;
+
+	&:hover,
+	&:focus-within {
+		text-decoration-color: color(Cyan-clr);
+	}
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

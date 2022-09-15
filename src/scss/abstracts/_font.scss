@@ -1,0 +1,25 @@
+@font-face {
+	font-family: "Ubuntu";
+	font-weight: 700;
+	font-display: swap;
+	src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	font-weight: 400;
+	font-display: swap;
+	src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+	src: url(../fonts/Ubuntu/Ubuntu-Italic.ttf);
+}
+
+$fonts:(
+  "Ubuntu": ("Ubuntu", sans-serif),
+);
