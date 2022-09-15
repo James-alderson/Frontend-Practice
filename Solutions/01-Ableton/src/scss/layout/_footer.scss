@@ -27,7 +27,7 @@
 		gap: 8.5vw 0.625rem;
 
 		@include respond(sm) {
-			gap: min(67px, 4.2vw) 0.625rem;
+			gap: min(67px, 4.2vw) 0.3rem;
 		}
 		@include respond(lg) {
 			grid-template-columns: 1fr 1fr 1.4fr;
@@ -145,7 +145,7 @@
 		@include respond(lg) {
 			display: flex;
 			margin-top: min(83px, calc(4.2vw + 1rem));
-			align-items: center;
+			align-items: flex-start;
 			justify-content: space-between;
 		}
 
@@ -161,6 +161,8 @@
 				margin: min(67px, 4.2vw) 0;
 			}
 			@include respond(lg) {
+				flex: 1;
+				flex-wrap: wrap;
 				flex-direction: row;
 				align-items: center;
 				margin: 0;

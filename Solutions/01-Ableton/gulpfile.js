@@ -69,7 +69,7 @@ function font_task() {
 function chacebust_task() {
   let dateString = new Date().getTime()
 
-  return src(["index.html"])
+  return src(["index.html", "index.de.html", "index.fr.html", "index.ja.html", "index.zh-cn.html"])
     .pipe(replace(/cb=\d+/g, "cb=" + dateString))
     .pipe(dest("."))
 }
