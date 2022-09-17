@@ -17,9 +17,11 @@ a {
 	font-style: italic;
 	outline: none;
 	text-underline-offset: 3px;
-	text-decoration: 1px wavy underline currentColor;
+	text-decoration-thickness: 2px;
+	transition: text-decoration 0.2s ease-out;
 
 	&:hover,
+	&:focus,
 	&:focus-within {
 		text-decoration-color: color(Cyan-clr);
 	}
