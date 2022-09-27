@@ -15,6 +15,7 @@ const browser_sync = require("browser-sync").create()
 
 // Files path
 const files = {
+  htmlPath: "**/*.html",
   scssPath: "src/scss/**/*.scss",
   jsPath: "src/js/**/*.js",
   imagePath: "src/images/**/*",
@@ -69,7 +70,7 @@ function font_task() {
 function chacebust_task() {
   let dateString = new Date().getTime()
 
-  return src(["index.html", "index.de.html", "index.fr.html", "index.ja.html", "index.zh-cn.html"])
+  return src(files.htmlPath)
     .pipe(replace(/cb=\d+/g, "cb=" + dateString))
     .pipe(dest("."))
 }
@@ -98,7 +99,7 @@ function browserSyncReload(callback) {
 
 // BrowserSync watch task
 function browserSyncWatch() {
-  watch(["index.html"], browserSyncReload)
+  watch(files.htmlPath, browserSyncReload)
   watch([files.scssPath, files.jsPath], series(parallel(scss_task, js_task), chacebust_task))
 }
 
