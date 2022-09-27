@@ -51,8 +51,7 @@ function js_task() {
 function image_task() {
   return src(files.imagePath)
     .pipe(imagemin([
-      imagemin.mozjpeg({ quality: 35, progressive: true }),
-      imagemin.optipng({ optimizationLevel: 5 })
+      imagemin.mozjpeg({ quality: 50, progressive: true }),
     ]).on("error", error => console.log(error)))
     .pipe(dest("dist/images"))
 }
