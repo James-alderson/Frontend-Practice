@@ -54,14 +54,18 @@
 
 			&::after {
 				content: "";
+				display: inline-block;
 				position: absolute;
 				top: 50%;
-				right: 11px;
-				width: 8px;
-				height: 7px;
+				right: 12px;
+				width: 0;
+				height: 0;
+				margin: 0 0 3px 5px;
 				pointer-events: none;
-				transform: translateY(-50%) scaleY(0.86);
-				background: url(../images/svg/arrow-down.svg) no-repeat;
+				border-top: 5px solid color(Black-clr);
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				transform: translateY(-50%);
 			}
 		}
 

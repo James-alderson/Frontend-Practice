@@ -39,12 +39,12 @@
 
 	.nav {
 		position: absolute;
-		top: -930px;
+		top: calc(-100% - 25rem);
 		left: 0;
 		right: 0;
 		z-index: 9;
 		padding: 4.5rem 0.9rem 0;
-		transition: top 0.5s ease-out;
+		transition: top 0.6s ease-out;
 		background-color: color(Secondary);
 
 		@include respond(lg) {
@@ -231,14 +231,14 @@
 			display: grid;
 			position: relative;
 			padding-bottom: 1rem;
-			overflow-x: auto;
-			column-gap: 2.2rem;
-			column-gap: 0.6rem;
+			overflow-x: scroll;
+			column-gap: 1rem;
 			grid-template-columns: repeat(4, 1fr);
 
 			@include respond(lg) {
 				column-gap: 1.65rem;
 				padding-bottom: 0;
+				overflow-x: auto;
 			}
 			@include respond(xxl) {
 				column-gap: 2.4rem;
