@@ -1,10 +1,41 @@
 # Ableton
 
-Learn more about Ableton - maker of Live and Push | Ableton
-
-## Description
-
 Ableton is a Berlin-based company that makes Live and Push - software and hardware for creating, producing and performing music. Learn more about Ableton.
+
+## Table of contents
+
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Getting started](#getting-started)
+  - [Development dependencies](#development-dependencies)
+  - [Installing](#installing)
+    - [Edit or development](#edit-or-development)
+- [Author](#author)
+
+## Overview
+
+### Screenshot
+
+![Ableton template screenshot](dist/images/screenshot/Ableton.png)
+
+### Links
+
+- Live Site URL: [live Site](https://james-alderson.github.io/Frontend-Practice/Solutions/01-Ableton/index.html)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Sass](https://sass-lang.com/) - CSS Preprocessor
+- [Gulp](https://gulpjs.com/) - Task runner
+- [ipgeolocation](https://ipgeolocation.io/) - Location API
 
 ## Getting Started
 
@@ -37,7 +68,3 @@ Ableton is a Berlin-based company that makes Live and Push - software and hardwa
 ## Author
 
 - Email - [james.alderson.a@gmail.com](mailto:james.alderson.a@gmail.com)
-
-## License
-
-This project is licensed under the [MIT] License - see the LICENSE file for details
