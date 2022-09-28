@@ -13,6 +13,10 @@
 .image-main {
 	width: min(1333px, 83.3vw);
 	margin: 0 auto;
+
+	img {
+		width: 100%;
+	}
 }
 
 .link--active {

@@ -8,8 +8,9 @@
   <meta name="description" content="Ableton est une société basée à Berlin qui fabrique Live et Push - des logiciels et du matériel pour créer, produire et interpréter de la musique. En savoir plus sur Ableton.">
 
   <title>En savoir plus sur Ableton - créateur de Live et Push | Ableton</title>
-  <link rel="stylesheet" href="../dist/css/main.css?cb=1664365739565">
+  <link rel="stylesheet" href="../dist/css/main.css?cb=1664368207970">
   <script src="../dist/js/script.js?cb=1664359463923" defer></script>
+  <!-- Favicons -->
   <link rel="apple-touch-icon" href="../dist/images/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="icon" href="../dist/images/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="../dist/images/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
@@ -20,7 +21,7 @@
   <div class="container">
     <header class="header">
       <div class="header__container">
-        <a href="index.fr.html" class="logo">
+        <a class="logo" href="index.fr.html">
           <svg width="45" height="21" viewBox="0 0 45 21">
             <title>Page d'accueil d'Ableton</title>
             <path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path>
@@ -31,17 +32,17 @@
       <nav class="nav">
         <div class="nav__container">
           <div>
-            <a href="#" class="nav__link">Live</a>
-            <a href="#" class="nav__link">Push</a>
-            <a href="#" class="nav__link">Link</a>
-            <a href="#" class="nav__link">Boutique</a>
-            <a href="#" class="nav__link">Packs</a>
-            <a href="#" class="nav__link">Aide</a>
+            <a class="nav__link" href="#">Live</a>
+            <a class="nav__link" href="#">Push</a>
+            <a class="nav__link" href="#">Link</a>
+            <a class="nav__link" href="#">Boutique</a>
+            <a class="nav__link" href="#">Packs</a>
+            <a class="nav__link" href="#">Aide</a>
             <button id="navMoreBtn" class="btn btn--nav btn--nav-more link--active">Plus</button>
           </div>
           <div>
-            <a href="#" class="nav__link nav__link--try-live">Essayez Live gratuitement</a>
-            <a href="#" class="nav__link nav__link--login-register">Connexion ou Inscription</a>
+            <a class="nav__link nav__link--try-live" href="#">Essayez Live gratuitement</a>
+            <a class="nav__link nav__link--login-register" href="#">Connexion ou Inscription</a>
           </div>
         </div>
         <div id="navMore" class="nav__more">
@@ -52,7 +53,7 @@
               <a href="#">Ableton pour la salle de classe</a>
               <a href="#">Ableton pour l’enseignement supérieur</a>
               <a href="#">Formation certifiée</a>
-              <a href="#" class="link--active">A propos d'Ableton</a>
+              <a class="link--active" href="#">A propos d'Ableton</a>
               <a href="#">Emplois</a>
               <a href="#">Apprentissages</a>
             </div>
@@ -96,7 +97,7 @@
       </nav>
     </header>
     <nav id="navScroll" class="nav-scroll">
-      <a href="#" class="link--active">À propos de</a>
+      <a class="link--active" href="#">À propos de</a>
       <a href="#">Emplois</a>
       <a href="#">Apprentissages</a>
     </nav>
@@ -189,11 +190,12 @@
           perspectives plus large. Nous ne sommes pas toujours d'accord les uns avec les autres, mais les opinions et
           les débats sont valorisés et ouvertement encouragés.</p>
       </article>
-      <img
-       class="image-main"
-       src="../dist/images/main/LQIP/photo-6.jpg"
-       data-src="../dist/images/main/photo-6.jpg"
-       alt="travail par ordinateur">
+      <div class="image-main">
+        <img
+         src="../dist/images/main/LQIP/photo-6.jpg"
+         data-src="../dist/images/main/photo-6.jpg"
+         alt="travail par ordinateur">
+      </div>
       <article class="article">
         <h2>Nous sommes passionnés par ce que nous faisons, mais nous sommes également passionnés par l'amélioration de
           qui nous sommes.</h2>
@@ -240,7 +242,7 @@
           <div class="card__container">
             <p class="card__description">Nous sommes vraiment fiers du travail que nous avons accompli jusqu'à présent.
               Mais il y a tellement plus à venir. Si vous souhaitez en faire partie, rejoignez-nous.</p>
-            <a href="#" class="link--arrow">Voir les derniers emplois</a>
+            <a class="link--arrow" href="#">Voir les derniers emplois</a>
           </div>
         </div>
       </div>
@@ -262,38 +264,68 @@
           </div>
           <div class="content social_media">
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">Enregistrer Live ou push</a></li>
-              <li><a href="#" class="content__link link--arrow">A propos d'Ableton</a></li>
-              <li><a href="#" class="content__link link--arrow">Emplois</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">Enregistrer Live ou push</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">A propos d'Ableton</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">Emplois</a>
+              </li>
             </ul>
             <div class="social-media">
-              <a href="#"><img class="social-media__facebook" src="../dist/images/svg/social-media/facebook.svg" alt="facebook"></a>
-              <a href="#"><img class="social-media__twitter" src="../dist/images/svg/social-media/twitter.svg" alt="twitter"></a>
-              <a href="#"><img class="social-media__youtube" src="../dist/images/svg/social-media/youtube.svg" alt="youtube"></a>
-              <a href="#"><img class="social-media__instagram" src="../dist/images/svg/social-media/instagram.svg" alt="instagram"></a>
+              <a href="#">
+                <img class="social-media__facebook" src="../dist/images/svg/social-media/facebook.svg" alt="facebook">
+              </a>
+              <a href="#">
+                <img class="social-media__twitter" src="../dist/images/svg/social-media/twitter.svg" alt="twitter">
+              </a>
+              <a href="#">
+                <img class="social-media__youtube" src="../dist/images/svg/social-media/youtube.svg" alt="youtube">
+              </a>
+              <a href="#">
+                <img class="social-media__instagram" src="../dist/images/svg/social-media/instagram.svg" alt="instagram">
+              </a>
             </div>
           </div>
           <div class="content education">
             <h3 class="content__title">Éducation</h3>
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">Offres pour étudiants et enseignants</a></li>
-              <li><a href="#" class="content__link link--arrow">Ableton pour la salle de classe</a></li>
-              <li><a href="#" class="content__link link--arrow">Ableton pour l’enseignement supérieur</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">Offres pour étudiants et enseignants</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">Ableton pour la salle de classe</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">Ableton pour l’enseignement supérieur</a>
+              </li>
             </ul>
           </div>
           <div class="content community">
             <h3 class="content__title">Communauté</h3>
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">Rechercher des groupes d'utilisateurs Ableton</a></li>
-              <li><a href="#" class="content__link link--arrow">Trouver une formation certifiée</a></li>
-              <li><a href="#" class="content__link link--arrow">Devenir formateur certifié</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">Rechercher des groupes d'utilisateurs Ableton</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">Trouver une formation certifiée</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">Devenir formateur certifié</a>
+              </li>
             </ul>
           </div>
           <div class="content distributors">
             <h3 class="content__title">Distributeurs</h3>
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">Trouver des distributeurs</a></li>
-              <li><a href="#" class="content__link link--arrow">Essayez Push en magasin</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">Trouver des distributeurs</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">Essayez Push en magasin</a>
+              </li>
             </ul>
           </div>
           <div class="content language_location">
@@ -578,12 +610,12 @@
         </div>
         <div class="row">
           <nav class="nav">
-            <a href="#" class="nav__link">Contactez-nous</a>
-            <a href="#" class="nav__link">Ressources presse</a>
-            <a href="#" class="nav__link">Informations légales</a>
-            <a href="#" class="nav__link">Politique de confidentialité</a>
-            <a href="#" class="nav__link">Paramètres de cookies</a>
-            <a href="#" class="nav__link">Mentions légales</a>
+            <a class="nav__link" href="#">Contactez-nous</a>
+            <a class="nav__link" href="#">Ressources presse</a>
+            <a class="nav__link" href="#">Informations légales</a>
+            <a class="nav__link" href="#">Politique de confidentialité</a>
+            <a class="nav__link" href="#">Paramètres de cookies</a>
+            <a class="nav__link" href="#">Mentions légales</a>
           </nav>
           <div class="logo-container">
             <img src="../dist/images/svg/logo.svg" alt="logo d'ableton" width="45" height="21">

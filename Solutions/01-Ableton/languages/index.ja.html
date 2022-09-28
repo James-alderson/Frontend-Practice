@@ -8,8 +8,9 @@
   <meta name="description" content="Abletonは、ベルリンに本社を置き、作曲、音楽制作、ライブパフォーマンスのためのソフトウェアとハードウェアであるLiveおよびPushを開発しているメーカーです。Abletonについて詳しくはこちらから。">
 
   <title>Abletonについて - LiveおよびPushの開発元 | Ableton</title>
-  <link rel="stylesheet" href="../dist/css/main.css?cb=1664365739565">
+  <link rel="stylesheet" href="../dist/css/main.css?cb=1664368207970">
   <script src="../dist/js/script.js?cb=1664359463923" defer></script>
+  <!-- Favicons -->
   <link rel="apple-touch-icon" href="../dist/images/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="icon" href="../dist/images/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="../dist/images/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
@@ -20,7 +21,7 @@
   <div class="container">
     <header class="header">
       <div class="header__container">
-        <a href="index.ja.html" class="logo">
+        <a class="logo" href="index.ja.html">
           <svg width="45" height="21" viewBox="0 0 45 21">
             <title>Abletonホームページ</title>
             <path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path>
@@ -31,17 +32,17 @@
       <nav class="nav">
         <div class="nav__container">
           <div>
-            <a href="#" class="nav__link">Live</a>
-            <a href="#" class="nav__link">Push</a>
-            <a href="#" class="nav__link">Link</a>
-            <a href="#" class="nav__link">ショップ</a>
-            <a href="#" class="nav__link">Packs</a>
-            <a href="#" class="nav__link">ヘルプ</a>
+            <a class="nav__link" href="#">Live</a>
+            <a class="nav__link" href="#">Push</a>
+            <a class="nav__link" href="#">Link</a>
+            <a class="nav__link" href="#">ショップ</a>
+            <a class="nav__link" href="#">Packs</a>
+            <a class="nav__link" href="#">ヘルプ</a>
             <button id="navMoreBtn" class="btn btn--nav btn--nav-more link--active">その他</button>
           </div>
           <div>
-            <a href="#" class="nav__link nav__link--try-live">Liveの無償体験</a>
-            <a href="#" class="nav__link nav__link--login-register">ログイン／登録</a>
+            <a class="nav__link nav__link--try-live" href="#">Liveの無償体験</a>
+            <a class="nav__link nav__link--login-register" href="#">ログイン／登録</a>
           </div>
         </div>
         <div id="navMore" class="nav__more">
@@ -52,7 +53,7 @@
               <a href="#">教室向けのAbleton</a>
               <a href="#">Abletonが提案する専門学校／大学向け音楽教育</a>
               <a href="#">認定トレーニング</a>
-              <a href="#" class="link--active">Abletonについて</a>
+              <a class="link--active" href="#">Abletonについて</a>
               <a href="#">採用情報</a>
               <a href="#">徒弟制度</a>
             </div>
@@ -92,7 +93,7 @@
       </nav>
     </header>
     <nav id="navScroll" class="nav-scroll">
-      <a href="#" class="link--active">情報</a>
+      <a class="link--active" href="#">情報</a>
       <a href="#">採用情報</a>
       <a href="#">徒弟制度</a>
     </nav>
@@ -170,11 +171,12 @@
         <h2>それには、真に優れたインストゥルメントを生み出すことに集中して取り組むことが必要であると私たちは考えます。Abletonは、厳選された製品を開発し、製品の機能向上に尽力しています。</h2>
         <p>ひとつですべてをまかなうといったプロセスではなく、それぞれのユーザーが独自の才能を開花し発揮するのに必要なものを提供したいと考えています。最高の結果は、多様性豊かなチームを構築し、問題をより幅広い視点から検証することから得られるということを、私たちは経験から学びました。常に相容れるわけではありませんが、さまざまな意見や議論を評価し、オープンに奨励しています。</p>
       </article>
-      <img
-       class="image-main"
-       src="../dist/images/main/LQIP/photo-6.jpg"
-       data-src="../dist/images/main/photo-6.jpg"
-       alt="コンピュータによる作業">
+      <div class="image-main">
+        <img
+         src="../dist/images/main/LQIP/photo-6.jpg"
+         data-src="../dist/images/main/photo-6.jpg"
+         alt="コンピュータによる作業">
+      </div>
       <article class="article">
         <h2>私たちの情熱が向かう先は製品だけではありません。スタッフは皆、自己研鑽にも熱心です。</h2>
         <p>Abletonは、それぞれが個人そして職業人として向上し、互いに学びの機会を与え合うことのできる環境づくりに取り組んでいます。</p>
@@ -208,7 +210,7 @@
         <div class="card__content">
           <div class="card__container">
             <p class="card__description">これまでの歴史に誇りを感じつつ、邁進を続けるAbleton。あなたも一緒に働きませんか。</p>
-            <a href="#" class="link--arrow">採用情報を見る</a>
+            <a class="link--arrow" href="#">採用情報を見る</a>
           </div>
         </div>
       </div>
@@ -229,38 +231,68 @@
           </div>
           <div class="content social_media">
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">Live／Pushの登録</a></li>
-              <li><a href="#" class="content__link link--arrow">Abletonについて</a></li>
-              <li><a href="#" class="content__link link--arrow">採用情報</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">Live／Pushの登録</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">Abletonについて</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">採用情報</a>
+              </li>
             </ul>
             <div class="social-media">
-              <a href="#"><img class="social-media__facebook" src="../dist/images/svg/social-media/facebook.svg" alt="facebook"></a>
-              <a href="#"><img class="social-media__twitter" src="../dist/images/svg/social-media/twitter.svg" alt="twitter"></a>
-              <a href="#"><img class="social-media__youtube" src="../dist/images/svg/social-media/youtube.svg" alt="youtube"></a>
-              <a href="#"><img class="social-media__instagram" src="../dist/images/svg/social-media/instagram.svg" alt="instagram"></a>
+              <a href="#">
+                <img class="social-media__facebook" src="../dist/images/svg/social-media/facebook.svg" alt="facebook">
+              </a>
+              <a href="#">
+                <img class="social-media__twitter" src="../dist/images/svg/social-media/twitter.svg" alt="twitter">
+              </a>
+              <a href="#">
+                <img class="social-media__youtube" src="../dist/images/svg/social-media/youtube.svg" alt="youtube">
+              </a>
+              <a href="#">
+                <img class="social-media__instagram" src="../dist/images/svg/social-media/instagram.svg" alt="instagram">
+              </a>
             </div>
           </div>
           <div class="content education">
             <h3 class="content__title">アカデミック</h3>
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">学生／教職員向け割引</a></li>
-              <li><a href="#" class="content__link link--arrow">教室向けのAbleton</a></li>
-              <li><a href="#" class="content__link link--arrow">Abletonが提案する専門学校／大学向け音楽教育</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">学生／教職員向け割引</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">教室向けのAbleton</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">Abletonが提案する専門学校／大学向け音楽教育</a>
+              </li>
             </ul>
           </div>
           <div class="content community">
             <h3 class="content__title">コミュニティ</h3>
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">Abletonユーザーグループの検索</a></li>
-              <li><a href="#" class="content__link link--arrow">認定トレーニング提供機関の検索</a></li>
-              <li><a href="#" class="content__link link--arrow">トレーナー認定を受ける</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">Abletonユーザーグループの検索</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">認定トレーニング提供機関の検索</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">トレーナー認定を受ける</a>
+              </li>
             </ul>
           </div>
           <div class="content distributors">
             <h3 class="content__title">代理店</h3>
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">代理店を検索</a></li>
-              <li><a href="#" class="content__link link--arrow">Pushの実機展示</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">代理店を検索</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">Pushの実機展示</a>
+              </li>
             </ul>
           </div>
           <div class="content language_location">
@@ -545,12 +577,12 @@
         </div>
         <div class="row">
           <nav class="nav">
-            <a href="#" class="nav__link">お問い合わせ</a>
-            <a href="#" class="nav__link">プレス向け資料</a>
-            <a href="#" class="nav__link">法的情報</a>
-            <a href="#" class="nav__link">プライバシーポリシー</a>
-            <a href="#" class="nav__link">クッキー設定</a>
-            <a href="#" class="nav__link">法律に基づく表記</a>
+            <a class="nav__link" href="#">お問い合わせ</a>
+            <a class="nav__link" href="#">プレス向け資料</a>
+            <a class="nav__link" href="#">法的情報</a>
+            <a class="nav__link" href="#">プライバシーポリシー</a>
+            <a class="nav__link" href="#">クッキー設定</a>
+            <a class="nav__link" href="#">法律に基づく表記</a>
           </nav>
           <div class="logo-container">
             <img src="../dist/images/svg/logo.svg" alt="ableton ロゴ" width="45" height="21">

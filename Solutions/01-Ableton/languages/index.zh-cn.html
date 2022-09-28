@@ -8,8 +8,9 @@
   <meta name="description" content="Ableton 是一家总部位于柏林的公司，生产 Live and Push - 用于创作、制作和表演音乐的软件和硬件。 了解有关 Ableton 的更多信息。">
 
   <title>了解更多关于 Ableton - Live and Push 制造商 | 阿布尔顿</title>
-  <link rel="stylesheet" href="../dist/css/main.css?cb=1664365739565">
+  <link rel="stylesheet" href="../dist/css/main.css?cb=1664368207970">
   <script src="../dist/js/script.js?cb=1664359463923" defer></script>
+  <!-- Favicons -->
   <link rel="apple-touch-icon" href="../dist/images/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="icon" href="../dist/images/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="../dist/images/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
@@ -20,7 +21,7 @@
   <div class="container">
     <header class="header">
       <div class="header__container">
-        <a href="index.zh-cn.html" class="logo">
+        <a class="logo" href="index.zh-cn.html">
           <svg width="45" height="21" viewBox="0 0 45 21">
             <title>Ableton 主页</title>
             <path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path>
@@ -31,17 +32,17 @@
       <nav class="nav">
         <div class="nav__container">
           <div>
-            <a href="#" class="nav__link">Live</a>
-            <a href="#" class="nav__link">Push</a>
-            <a href="#" class="nav__link">Link</a>
-            <a href="#" class="nav__link">商店</a>
-            <a href="#" class="nav__link">Packs</a>
-            <a href="#" class="nav__link">帮助</a>
+            <a class="nav__link" href="#">Live</a>
+            <a class="nav__link" href="#">Push</a>
+            <a class="nav__link" href="#">Link</a>
+            <a class="nav__link" href="#">商店</a>
+            <a class="nav__link" href="#">Packs</a>
+            <a class="nav__link" href="#">帮助</a>
             <button id="navMoreBtn" class="btn btn--nav btn--nav-more link--active">更多</button>
           </div>
           <div>
-            <a href="#" class="nav__link nav__link--try-live">免费试用 Live</a>
-            <a href="#" class="nav__link nav__link--login-register">登录或注册</a>
+            <a class="nav__link nav__link--try-live" href="#">免费试用 Live</a>
+            <a class="nav__link nav__link--login-register" href="#">登录或注册</a>
           </div>
         </div>
         <div id="navMore" class="nav__more">
@@ -52,7 +53,7 @@
               <a href="#">用于课堂的 Ableton</a>
               <a href="#">适用于高等院校的 Ableton 教学</a>
               <a href="#">认证培训</a>
-              <a href="#" class="link--active">关于 Ableton</a>
+              <a class="link--active" href="#">关于 Ableton</a>
               <a href="#">工作机会</a>
               <a href="#">学徒</a>
             </div>
@@ -92,7 +93,7 @@
       </nav>
     </header>
     <nav id="navScroll" class="nav-scroll">
-      <a href="#" class="link--active">关于</a>
+      <a class="link--active" href="#">关于</a>
       <a href="#">工作机会</a>
       <a href="#">学徒</a>
     </nav>
@@ -172,11 +173,12 @@
         <p>我们不是采用一刀切的流程，而是尝试为员工提供他们需要的东西来发挥他们的魔力和成长。 我们了解到，要想取得最好的结果，就必须建立多元化的团队，从而能够从更广泛的角度探索问题。
           我们并不总是彼此同意，但意见和辩论受到重视和公开鼓励。</p>
       </article>
-      <img
-       class="image-main"
-       src="../dist/images/main/LQIP/photo-6.jpg"
-       data-src="../dist/images/main/photo-6.jpg"
-       alt="用电脑工作">
+      <div class="image-main">
+        <img
+         src="../dist/images/main/LQIP/photo-6.jpg"
+         data-src="../dist/images/main/photo-6.jpg"
+         alt="用电脑工作">
+      </div>
       <article class="article">
         <h2>我们对我们所做的事情充满热情，但我们同样热衷于改善自己。</h2>
         <p>我们努力营造一个人们可以在个人和专业上成长的环境，我们努力创造大量相互学习和相互学习的机会。</p>
@@ -211,7 +213,7 @@
         <div class="card__content">
           <div class="card__container">
             <p class="card__description">我们为迄今为止所做的工作感到非常自豪。 但是还有很多事情要做。 如果您想成为其中的一员，请加入我们。</p>
-            <a href="#" class="link--arrow">查看最新职位</a>
+            <a class="link--arrow" href="#">查看最新职位</a>
           </div>
         </div>
       </div>
@@ -232,38 +234,68 @@
           </div>
           <div class="content social_media">
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">注册 Live 或 Push</a></li>
-              <li><a href="#" class="content__link link--arrow">关于 Ableton</a></li>
-              <li><a href="#" class="content__link link--arrow">工作机会</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">注册 Live 或 Push</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">关于 Ableton</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">工作机会</a>
+              </li>
             </ul>
             <div class="social-media">
-              <a href="#"><img class="social-media__facebook" src="../dist/images/svg/social-media/facebook.svg" alt="facebook"></a>
-              <a href="#"><img class="social-media__twitter" src="../dist/images/svg/social-media/twitter.svg" alt="twitter"></a>
-              <a href="#"><img class="social-media__youtube" src="../dist/images/svg/social-media/youtube.svg" alt="youtube"></a>
-              <a href="#"><img class="social-media__instagram" src="../dist/images/svg/social-media/instagram.svg" alt="instagram"></a>
+              <a href="#">
+                <img class="social-media__facebook" src="../dist/images/svg/social-media/facebook.svg" alt="facebook">
+              </a>
+              <a href="#">
+                <img class="social-media__twitter" src="../dist/images/svg/social-media/twitter.svg" alt="twitter">
+              </a>
+              <a href="#">
+                <img class="social-media__youtube" src="../dist/images/svg/social-media/youtube.svg" alt="youtube">
+              </a>
+              <a href="#">
+                <img class="social-media__instagram" src="../dist/images/svg/social-media/instagram.svg" alt="instagram">
+              </a>
             </div>
           </div>
           <div class="content education">
             <h3 class="content__title">教育</h3>
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">学生和老师的优惠</a></li>
-              <li><a href="#" class="content__link link--arrow">用于课堂的 Ableton</a></li>
-              <li><a href="#" class="content__link link--arrow">适用于高等院校的 Ableton 教学</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">学生和老师的优惠</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">用于课堂的 Ableton</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">适用于高等院校的 Ableton 教学</a>
+              </li>
             </ul>
           </div>
           <div class="content community">
             <h3 class="content__title">社群</h3>
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">寻找 Ableton 用户群</a></li>
-              <li><a href="#" class="content__link link--arrow">寻找认证培训</a></li>
-              <li><a href="#" class="content__link link--arrow">成为认证导师</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">寻找 Ableton 用户群</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">寻找认证培训</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">成为认证导师</a>
+              </li>
             </ul>
           </div>
           <div class="content distributors">
             <h3 class="content__title">经销商</h3>
             <ul class="content__list">
-              <li><a href="#" class="content__link link--arrow">寻找经销商</a></li>
-              <li><a href="#" class="content__link link--arrow">实体店体验 Push</a></li>
+              <li>
+                <a class="content__link link--arrow" href="#">寻找经销商</a>
+              </li>
+              <li>
+                <a class="content__link link--arrow" href="#">实体店体验 Push</a>
+              </li>
             </ul>
           </div>
           <div class="content language_location">
@@ -548,12 +580,12 @@
         </div>
         <div class="row">
           <nav class="nav">
-            <a href="#" class="nav__link">联系我们</a>
-            <a href="#" class="nav__link">新闻资源</a>
-            <a href="#" class="nav__link">法律信息</a>
-            <a href="#" class="nav__link">隐私政策</a>
-            <a href="#" class="nav__link">Cookie 设置</a>
-            <a href="#" class="nav__link">印记</a>
+            <a class="nav__link" href="#">联系我们</a>
+            <a class="nav__link" href="#">新闻资源</a>
+            <a class="nav__link" href="#">法律信息</a>
+            <a class="nav__link" href="#">隐私政策</a>
+            <a class="nav__link" href="#">Cookie 设置</a>
+            <a class="nav__link" href="#">印记</a>
           </nav>
           <div class="logo-container">
             <img src="../dist/images/svg/logo.svg" alt="ableton 标识" width="45" height="21">
