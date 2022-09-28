@@ -8,33 +8,42 @@
   <meta name="description" content="Solution to Frontend Practice website challenges.">
 
   <title>Frontend Practice Solutions</title>
-    <link rel="stylesheet" href="dist/css/main.css?cb=1664395892125">
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="dist/images/favicon/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="dist/images/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="dist/images/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
-    <link rel="manifest" href="dist/images/favicon/site.webmanifest">
+  <!-- Bootstrap v4.6.2 -->
+  <link rel="stylesheet" href="dist/css/vendors/bootstrap-4.6.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/css/main.css?cb=1664396793245">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="dist/images/favicon/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="dist/images/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="dist/images/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="manifest" href="dist/images/favicon/site.webmanifest">
 </head>
-<body>
-
+<body class="bg-light">
+  
   <main>
-    <div class="container">
-      <h1>Frontend Practice Solutions</h1>
-      <p>Solution to Frontend Practice website challenges.</p>
-      <div class="solution">
-        <div class="solution__item">
-          <div class="badge badge--green">Solution 1</div>
-          <a href="Solutions/01-Ableton/index.html" class="solution__img-container" tabindex="-1" target="_blank">
-            <img class="solution__img" src="Solutions/01-Ableton/dist/images/screenshot/Ableton.png" alt="Ableton" width="300"
-              height="359" loading="lazy">
-          </a>
-          <div class="solution__content">
-            <a href="Solutions/01-Ableton/index.html" class="solution__link" target="_blank">Ableton</a>
+    <div class="container-xl my-4">
+      <article>
+        <h1>Frontend Practice Solutions</h1>
+        <p class="lead font-weight-normal">Solution to Frontend Practice website challenges.</p>
+      </article>
+      <!-- Solutions -->
+      <div class="row mt-5">
+        <div class="col-12 col-sm-6 col-lg-4 my-3">
+          <div class="card bg-light border-dark shadow">
+            <img class="card-img-top border-bottom border-secondary"
+              src="Solutions/01-Ableton/dist/images/screenshot/Ableton.png" alt="Ableton template">
+            <div class="card-body">
+              <div class="card-title h5">Ableton</div>
+              <p class="card-text">Ableton is a Berlin-based company that makes Live and Push - software and hardware for creating, producing and performing music. Learn more about Ableton.</p>
+              <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                <a class="btn btn-primary" href="https://james-alderson.github.io/Frontend-Practice/Solutions/01-Ableton/index.html">Live site</a>
+                <a class="btn btn-secondary" href="https://github.com/James-alderson/Frontend-Practice/tree/main/Solutions/01-Ableton">Source code</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-
+  
 </body>
 </html>

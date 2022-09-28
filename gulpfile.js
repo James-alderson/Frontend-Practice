@@ -23,12 +23,6 @@ function css_task() {
     .pipe(dest("dist/css"))
 }
 
-/* CopyImage task */
-function copyImage_task() {
-  return src(["src/images/favicon/*"], { "base": "src/images" })
-    .pipe(dest("dist/images"))
-}
-
 // Chachebust task
 function chachebust_task() {
   let timeString = new Date().getTime()
@@ -36,6 +30,18 @@ function chachebust_task() {
   return src(["index.html"])
     .pipe(replace(/cb=\d+/g, "cb=" + timeString))
     .pipe(dest("."))
+}
+
+// CopyCss vendors task
+function copyCss_task() {
+  return src(["src/css/vendors/**/*"])
+    .pipe(dest("dist/css/vendors"))
+}
+
+/* CopyImage task */
+function copyImage_task() {
+  return src(["src/images/favicon/*"], { "base": "src/images" })
+    .pipe(dest("dist/images"))
 }
 
 // Initialize browserSync
@@ -72,7 +78,7 @@ function watch_task() {
 }
 
 // Gulp default task
-exports.default = series(parallel(css_task), chachebust_task, copyImage_task, watch_task)
+exports.default = series(parallel(css_task), chachebust_task, copyCss_task, copyImage_task, watch_task)
 
 // Run browserSync
-exports.bs = series(parallel(css_task), chachebust_task, copyImage_task, browserSync, BrowserSyncWathc)
+exports.bs = series(parallel(css_task), chachebust_task, copyCss_task, copyImage_task, browserSync, BrowserSyncWathc)
